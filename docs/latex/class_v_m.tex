@@ -1,0 +1,79 @@
+\hypertarget{class_v_m}{}\section{VM Class Reference}
+\label{class_v_m}\index{VM@{VM}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_v_m_a1e35950311fcd5b979826a88a70b2ff1}\label{class_v_m_a1e35950311fcd5b979826a88a70b2ff1}} 
+{\bfseries VM} (size\+\_\+t mem\+\_\+alloc)
+\item 
+void \mbox{\hyperlink{class_v_m_a3ecb3c0ac60913fce9265075cff13b3e}{Clear\+Memory}} () noexcept
+\item 
+\mbox{\Hypertarget{class_v_m_a27c2abea1a473e46a715461a7398ab52}\label{class_v_m_a27c2abea1a473e46a715461a7398ab52}} 
+void {\bfseries Reset\+Memory} ()
+\item 
+\mbox{\Hypertarget{class_v_m_af9c967a1c85e41be6eb199f3cc44000b}\label{class_v_m_af9c967a1c85e41be6eb199f3cc44000b}} 
+void {\bfseries Print\+Available\+Memory\+Space} ()
+\item 
+void \mbox{\hyperlink{class_v_m_a96ac4af79fb5e5fa9c168ffe0bd8a8a7}{New\+String}} (std\+::string $\ast$\&s, const char $\ast$text)
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{class_v_m_ae9bb9435ff87b17b9a2103a4fbaa526f}{New\+String}} (const char $\ast$s, size\+\_\+t len)
+\item 
+\mbox{\Hypertarget{class_v_m_a03cc83d83a3cd9bfc45d7d5315506542}\label{class_v_m_a03cc83d83a3cd9bfc45d7d5315506542}} 
+unsigned char $\ast$ {\bfseries New\+String} (const char s, size\+\_\+t len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_m_a3ecb3c0ac60913fce9265075cff13b3e}\label{class_v_m_a3ecb3c0ac60913fce9265075cff13b3e}} 
+\index{VM@{VM}!ClearMemory@{ClearMemory}}
+\index{ClearMemory@{ClearMemory}!VM@{VM}}
+\subsubsection{\texorpdfstring{ClearMemory()}{ClearMemory()}}
+{\footnotesize\ttfamily void V\+M\+::\+Clear\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+This function clears memory, completely. All memory bytes are replaced with N\+U\+LL characters. 
+\begin{DoxyExceptions}{Exceptions}
+{\em noexcept} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_v_m_a96ac4af79fb5e5fa9c168ffe0bd8a8a7}\label{class_v_m_a96ac4af79fb5e5fa9c168ffe0bd8a8a7}} 
+\index{VM@{VM}!NewString@{NewString}}
+\index{NewString@{NewString}!VM@{VM}}
+\subsubsection{\texorpdfstring{NewString()}{NewString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void V\+M\+::\+New\+String (\begin{DoxyParamCaption}\item[{std\+::string $\ast$\&}]{s,  }\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+This function clears memory, completely. All memory bytes are replaced with N\+U\+LL characters. 
+\begin{DoxyParams}{Parameters}
+{\em s} & Reference to a pointer of std\+::string, the string to input into virtual memory \\
+\hline
+{\em text} & Pointer to the text to be inserted into the virtual memory \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em noexcept} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_v_m_ae9bb9435ff87b17b9a2103a4fbaa526f}\label{class_v_m_ae9bb9435ff87b17b9a2103a4fbaa526f}} 
+\index{VM@{VM}!NewString@{NewString}}
+\index{NewString@{NewString}!VM@{VM}}
+\subsubsection{\texorpdfstring{NewString()}{NewString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned char $\ast$ V\+M\+::\+New\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+This function clears memory, completely. All memory bytes are replaced with N\+U\+LL characters. 
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the string to be inserted into the virtual memory \\
+\hline
+{\em len} & The length of the string to be inserted into the virtual memory \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em noexcept} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+virtual\+\_\+memory.\+hpp\item 
+virtual\+\_\+memory.\+cpp\end{DoxyCompactItemize}
