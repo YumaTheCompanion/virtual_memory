@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 
+#define MAGIC_NUMBER            8
+
 class VM {
 public:
     VM(size_t mem_alloc) {
@@ -20,8 +22,12 @@ public:
         std::cout << "Virtual Memory is destroyed.\n";
     }
     
+    void ClearMemory();
+    void ResetMemory();
     void PrintAvailableMemorySpace();
     void NewString(std::string *&s, const char *text);
+    unsigned char * NewString(const char *s, size_t len);
+    unsigned char * NewString(const char s, size_t len);
 private:
     bool memory_is_allocated;
     unsigned char *tb;
